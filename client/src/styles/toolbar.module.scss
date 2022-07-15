@@ -1,0 +1,77 @@
+@import "variables.module";
+
+.toolbar {
+  height: $toolbar-height;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 4px 5px grey;
+  z-index: 999;
+
+  &__btn {
+    height: 30px;
+    width: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+    background-size: 90%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+  }
+  &__btn:hover {
+    box-shadow: 0 0 5px 2px grey;
+    transform: translate(-1px, -1px);
+  }
+  &__btn:active {
+    transform: scale(0.95);
+  }
+
+  .brush {
+    background-image: url("../assets/images/brush.png");
+  }
+
+  .rect {
+    background-image: url("../assets/images/rect.png");
+  }
+
+  .circle {
+    background-image: url("../assets/images/circle.png");
+  }
+
+  .eraser {
+    background-image: url("../assets/images/eraser.png");
+  }
+
+  .line {
+    background-image: url("../assets/images/line.png");
+  }
+
+  .undo {
+    margin-left: auto;
+    background-image: url("../assets/images/undo.png");
+  }
+
+  .redo {
+    background-image: url("../assets/images/undo.png");
+    transform: scaleX(-1);
+  }
+
+  .clear {
+    background-image: url("../assets/images/clear.png");
+    margin-right: 10px;
+  }
+  .save {
+    background-image: url("../assets/images/save.png");
+    margin-right: 10px;
+  }
+
+  .active {
+    background-size: 85%;
+    border: 1px solid teal;
+  }
+}

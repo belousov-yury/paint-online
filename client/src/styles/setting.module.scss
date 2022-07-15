@@ -1,0 +1,19 @@
+@import "variables.module";
+
+.setting {
+  height: $toolbar-height;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 4px 5px grey;
+  top: $toolbar-height;
+  label {
+    margin-left: 10px;
+  }
+  input {
+    margin: 0 10px;
+  }
+}
+
